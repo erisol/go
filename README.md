@@ -1,6 +1,6 @@
 # Report: Lab 1
 
-<h3>Question 1</h3><br>
+<h3>Question 1</h3>
 <strong>Exercise 43:</strong>
 ```
 package main
@@ -81,9 +81,9 @@ func main() {
   pic.ShowImage(&m)
 }
 ```
-<h3>Question 2</h3><br>
+<h3>Question 2</h3>
 ok (bool) is false
-<h3>Question 3</h3><br>
+<h3>Question 3</h3>
 You can define a "class" in golang with the use of structs:
 ```
 type Message struct {
@@ -91,9 +91,9 @@ type Message struct {
   Content <type>
 }
 ```
-<h3>Question 4</h3><br>
+<h3>Question 4</h3>
 ```
 func CheckForError(m Message) (err, error) {}
 ```
-<h3>Question 5</h3><br>
+<h3>Question 5</h3>
 Source code can be found on Github
