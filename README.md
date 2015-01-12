@@ -1,6 +1,6 @@
 # Report: Lab 1
 
-<h2>Question 1</h2><br>
+<h3>Question 1</h3><br>
 <strong>Exercise 43:</strong>
 ```
 package main
@@ -27,3 +27,73 @@ func main() {
   fmt.Prinln(math.Sqrt(2))
 }
 ```
+<strong>Exercise 46:</strong>
+```
+package main
+
+import "fmt"
+
+func fibonacci() func() int {
+  x := 0
+  y := 1
+  return func() int {
+    x,y = y,x+y
+    return x
+  }
+}
+
+func main() {
+  f := fibonacci()
+  for i := 0; i < 10; i++ {
+    fmt.Println(f())
+  }
+}
+```
+<strong>Exercise 58:</strong>
+```
+package main
+
+import (
+  "fmt"
+  "tour/pic"
+  "image/color"
+)
+
+type Image struct  {
+  Width, Height int
+  colr uint8
+}
+
+func (r *Image) Bounds() image.Rectangle {
+  return image.Rect(0, 0, r.Width, r.Height)
+}
+
+func (r *Image) ColorModel() color.Model {
+  return color.RGBAModel
+}
+
+func (r *Image) At(x, y, int) color.Color {
+  return color.RGBA{r.colr+uint8(x), r.colr+uint8(y), 255, 255}
+}
+
+func main() {
+  m := Image{100, 100, 128}
+  pic.ShowImage(&m)
+}
+```
+<h3>Question 2</h3><br>
+ok (bool) is false
+<h3>Question 3</h3><br>
+You can define a "class" in golang with the use of structs:
+```
+type Message struct {
+  Sender <type>
+  Content <type>
+}
+```
+<h3>Question 4</h3><br>
+```
+func CheckForError(m Message) (err, error) {}
+```
+<h3>Question 5</h3><br>
+Source code can be found on Github
