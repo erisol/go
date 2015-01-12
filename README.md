@@ -2,7 +2,7 @@
 
 <h3>Question 1</h3>
 <strong>Exercise 43:</strong>
-```
+``` go
 package main
 
 import (
