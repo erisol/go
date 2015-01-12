@@ -1,4 +1,4 @@
-# Report: Lab 1
+# Report: Lab 1, Erik Solhaug
 
 <h3>Question 1</h3>
 <strong>Exercise 43:</strong>
